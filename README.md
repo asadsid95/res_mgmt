@@ -9,7 +9,7 @@ Product requirement:
 
  - unit occupied by one resident 
 
- - 3 types of parcels; no limit on unit; reminder sent to user after 24h of no-pickup 
+ - 3 types of parcels; no limit on unit; reminder sent to user after 2 days of no-pickup 
 
  - Able to add package(s) received for each unit
  - Unit numbers who have picked the parcel today
@@ -21,18 +21,17 @@ Product requirement:
  - What was the heaviest package and for which unit today?
 
 
-    
-Analyzing client requirements for software requirements:
+List all features and entities:
+- Features (E - essential & NE - Non-essential):
+- - Add residents to Unit (E)
+- - Remove residents to Unit (E)
+- - Add parcels to unit (E)
+- - Add parcels to Unit (E)
+- - Email resident if parcel not picked up after 2days(NE)
 
-1.  Storing data of resident and packages in DB:
+- Entities:
+- - GUI
+- - Database
 
-    Residents directory:
-    - add resident with various details 
-    - - Name, unit # 
-    - remove resident
-    
-    Parcel management feature:
-    - add package
-    - - assign resident name, unit number, courier, weight, checked time
-
-2.  Make GUI (tkinter) to show management features
+User Journey:
+[link](https://miro.com/app/board/uXjVOY5yft8=/?invite_link_id=737696554129)
