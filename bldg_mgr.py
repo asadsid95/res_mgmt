@@ -25,17 +25,16 @@ class Building:
         assert number in current_occupied_units, f'Unit {number} is not occupied'
         
         del self.units[number]
-        pass
 
-buildingA = Building()
+# buildingA = Building()
 
-buildingA.add_unit(100)
-buildingA.add_unit(200)
-buildingA.add_unit(300)
-print(buildingA.units)
+# buildingA.add_unit(100)
+# buildingA.add_unit(200)
+# buildingA.add_unit(300)
+# print(buildingA.units)
 
-buildingA.remove_unit(100)
-buildingA.remove_unit(200)
-print(buildingA.units)
+# buildingA.remove_unit(100)
+# buildingA.remove_unit(200)
+# print(buildingA.units)
 
     
