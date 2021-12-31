@@ -17,13 +17,12 @@ class Unit:
         # print(self.resident.name)
 
     def remove_resident(self, name):
-        assert self.occupied == True, 'Unit is vacant'
+        assert self.occupied == True, 'Resident cannot be removed as Unit is vacant'
         
         print(f"resident {self.resident.name} is being removed")
         
         self.resident = None
         self.occupied = False
-
 
 unit1 = Unit(100)
 unit1.add_resident('Bob Vance', 'b.v@a.com', 0, 2)

@@ -17,7 +17,7 @@ class Building:
         assert len(current_occupied_units) < Building.max_capacity_resident, f"Building capacity is {Building.max_capacity_resident}, {self} being the {self.units_counter}th exceed this"
 
         new = Unit(number)
-        self.units[new.number] = self.units_counter
+        self.units[new.unit_number] = self.units_counter
         self.units_counter += 1
 
     def remove_unit(self,number):
@@ -26,12 +26,12 @@ class Building:
         
         del self.units[number]
 
-# buildingA = Building()
+buildingA = Building()
 
-# buildingA.add_unit(100)
-# buildingA.add_unit(200)
-# buildingA.add_unit(300)
-# print(buildingA.units)
+buildingA.add_unit(100)
+buildingA.add_unit(200)
+buildingA.add_unit(300)
+print(buildingA.units)
 
 # buildingA.remove_unit(100)
 # buildingA.remove_unit(200)
