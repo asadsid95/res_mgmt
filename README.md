@@ -18,12 +18,12 @@ This system, operated by building's concierge (staff), will allow assigning resi
 - Must have(s): 1,2,3
 - Nice to have(s) AKA focus on these once 'Must have(s)' are completed: 4,5,6,7,8
 
- - Add/remove residents into unit; shows on main page
- - Add/remove packages for resident/unit; shows on main page
+ ~~- Add/remove residents into unit; shows on main page~~
+ ~~- Add/remove packages for resident/unit; shows on main page~~
 
- - unit occupied by one resident 
+ ~~- unit occupied by one resident~~
 
- - 3 types of parcels; no limit on unit; reminder sent to user after 2 days of no-pickup 
+ ~~- 3 types of parcels; no limit on unit; reminder sent to user after 2 days of no-pickup~~
 
 **Technical requirements**
 
