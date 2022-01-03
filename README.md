@@ -38,6 +38,31 @@ This system, operated by building's concierge (staff), will allow assigning resi
 **User Journey:**
 [link](https://miro.com/app/board/uXjVOY5yft8=/?invite_link_id=737696554129)
 
+**Data model & ERD:**
+
+- Table: Units
+- - unit_id INT (PK)
+- - unit_number INT
+- - Occupied BOOLEAN
+
+- Table: Residents
+- - resident_id INT (PK)
+- - unit_id (FK)
+- - name TEXT
+- - email TEXT
+- - lease_start_date DATETIME/TEXT
+- - lease_END_date DATETIME/TEXT
+- - active BOOLEAN
+
+- Table: Parcels
+- - parcel_id INT (PK)
+- - resident_id INT (FK)
+- - courier TEXT
+- - time_check_in DATETIME/TEXT
+- - time_check_out DATETIME/TEXT
+- - picked_up BOOLEAN
+
+
 ~~Client wants resident's directory and parcel management feature for residents, to be used by Concierge.~~
  
  ~~- Add/remove residents into unit; shows on main page~~
