@@ -40,16 +40,16 @@ Product requirement:
 
 
 ~~List all features and entities:
-- Features (E - essential & NE - Non-essential):
-- - Add residents to Unit (E)
-- - Remove residents to Unit (E)
-- - Add parcels to unit (E)
-- - Add parcels to Unit (E)
-- - Email resident if parcel not picked up after 2days(NE)~~
+~~- Features (E - essential & NE - Non-essential):
+~~- - Add residents to Unit (E)
+~~- - Remove residents to Unit (E)
+~~- - Add parcels to unit (E)
+~~- - Add parcels to Unit (E)
+~~- - Email resident if parcel not picked up after 2days(NE)~~
 
-- Entities:
-- - GUI
-- - Database
+~~- Entities:
+~~- - GUI
+~~- - Database~~
 
 User Journey:
 [link](https://miro.com/app/board/uXjVOY5yft8=/?invite_link_id=737696554129)
