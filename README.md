@@ -1,7 +1,7 @@
 # res_mgmt
 
 ### Goal of this program:
-~~ Client wants resident's directory and parcel management feature for residents, to be used by Concierge. ~~
+~~Client wants resident's directory and parcel management feature for residents, to be used by Concierge.~~
 
 This program is a building management system. The following are **client's requirements**:
 This system, operated by building's concierge (staff), will allow assigning residents to units, adding/removing parcel upon receiving/picking up.
