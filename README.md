@@ -17,6 +17,23 @@ This system, operated by building's concierge (staff), will allow assigning resi
 - Must have(s): 1,2,3
 - Nice to have(s) AKA focus on these once 'Must have(s)' are completed: 4,5,6,7,8
 
+**Technical requirements**
+
+- Storage: SQLite3  
+
+- When creating unit for building, number of units <= max capacity 
+- 
+
+Insertion of resident 
+
+**User types**
+
+- Concierge staff
+- Residents
+
+**User Journey:**
+[link](https://miro.com/app/board/uXjVOY5yft8=/?invite_link_id=737696554129)
+
 ~~Client wants resident's directory and parcel management feature for residents, to be used by Concierge.~~
  
  ~~- Add/remove residents into unit; shows on main page~~
@@ -25,8 +42,6 @@ This system, operated by building's concierge (staff), will allow assigning resi
  ~~- unit occupied by one resident~~
 
  ~~- 3 types of parcels; no limit on unit; reminder sent to user after 2 days of no-pickup~~
-
-**Technical requirements**
 
 Product requirement:
 
@@ -51,6 +66,3 @@ Product requirement:
 ~~- Entities:~~
 ~~-GUI~~
 ~~- Database~~
-
-User Journey:
-[link](https://miro.com/app/board/uXjVOY5yft8=/?invite_link_id=737696554129)
