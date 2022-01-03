@@ -18,16 +18,16 @@ This system, operated by building's concierge (staff), will allow assigning resi
 - Must have(s): 1,2,3
 - Nice to have(s) AKA focus on these once 'Must have(s)' are completed: 4,5,6,7,8
 
-**Technical requirements**
-
-Product requirement:
-
  - Add/remove residents into unit; shows on main page
  - Add/remove packages for resident/unit; shows on main page
 
  - unit occupied by one resident 
 
  - 3 types of parcels; no limit on unit; reminder sent to user after 2 days of no-pickup 
+
+**Technical requirements**
+
+Product requirement:
 
  - Able to add package(s) received for each unit
  - Unit numbers who have picked the parcel today
@@ -39,13 +39,13 @@ Product requirement:
  - What was the heaviest package and for which unit today?
 
 
-~~List all features and entities:
-Features (E - essential & NE - Non-essential):
-~- - Add residents to Unit (E)
-~- - Remove residents to Unit (E)
-~- - Add parcels to unit (E)
-~- - Add parcels to Unit (E)
-~- - Email resident if parcel not picked up after 2days(NE)~~
+~~List all features and entities:~~
+~~Features (E - essential & NE - Non-essential):~~
+~~- - Add residents to Unit (E)~~
+~~- - Remove residents to Unit (E)~~
+~~- - Add parcels to unit (E)~~
+~~- - Add parcels to Unit (E)~~
+~~- - Email resident if parcel not picked up after 2days(NE)~~
 
 ~~- Entities:
 ~ - GUI ~~
