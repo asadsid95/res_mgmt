@@ -3,10 +3,11 @@ from unit import Unit
 class Building:
     address='123 address st'
     management='Mgmt Co.'
-    max_capacity_resident = 3
+    max_capacity_units = 3
     
-    def __init__(self,unit = {}):
-        self.units = unit
+    def __init__(self):
+        # self.units = [1:Building.max_capacity_units]
+        self.units = {}
         self.units_counter = 1
 
     def add_unit(self,number):
@@ -26,15 +27,21 @@ class Building:
         
         del self.units[number]
 
-buildingA = Building()
+# buildingA = Building()
 
-buildingA.add_unit(100)
-buildingA.add_unit(200)
-buildingA.add_unit(300)
-print(buildingA.units)
+# buildingA.add_unit(100)
+# buildingA.add_unit(200)
+# buildingA.add_unit(300)
+# print(buildingA.units)
 
 # buildingA.remove_unit(100)
 # buildingA.remove_unit(200)
 # print(buildingA.units)
 
+test=(1,)
+max_cap = 700
+test1 = list(range(101, max_cap, 100))
+
+print(type(test))
+print(test1)
     
