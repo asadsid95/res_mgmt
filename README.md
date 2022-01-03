@@ -47,8 +47,8 @@ Product requirement:
 ~~- - Add parcels to Unit (E)~~
 ~~- - Email resident if parcel not picked up after 2days(NE)~~
 
-~~- Entities:
-~ - GUI ~~
+~~- Entities:~~
+~~- GUI ~~
 ~~- - Database~~
 
 User Journey:
