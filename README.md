@@ -22,9 +22,13 @@ This system, operated by building's concierge (staff), will allow assigning resi
 - Storage: SQLite3  
 
 - When creating unit for building, number of units <= max capacity 
-- 
+- When assigning residents to suites, suite # must be part of building and be vacant. Resident also get added into history list (of all residents to occupy that suite)
+- When removing residents from suites, suite must be part of building and occupied by that resident
+* assume one resident per suite. Resident become deactivated but remain in the history list 
 
-Insertion of resident 
+- When assigning a parcel, it must match suite # and name of resident, add onto list of other parcels
+- When removing parcels, all parcels get removed
+- For parcels reminders, it should be include list of all parcels needing to be picked up
 
 **User types**
 
