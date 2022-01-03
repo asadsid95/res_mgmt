@@ -48,8 +48,8 @@ Product requirement:
 ~~- - Email resident if parcel not picked up after 2days(NE)~~
 
 ~~- Entities:~~
-~~- GUI ~~
-~~- - Database~~
+~~-GUI~~
+~~- Database~~
 
 User Journey:
 [link](https://miro.com/app/board/uXjVOY5yft8=/?invite_link_id=737696554129)
