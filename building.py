@@ -1,19 +1,57 @@
-class Unit:
+class Resident:
+    '''
+    When initialized, the object will represent a resident living in a suite.
+    '''
+    def __init__(self, name, email) -> None:
+        self.name = name
+        self.email = email
+        pass
+
+class Suite:
+    '''
+    When initialized, the object will represent a suite in the building.
+    '''
+    all_suites = []
     def __init__(self, suite_number, is_vacant = True):
         self.suite_number = suite_number
         self.is_vacant = is_vacant
-        self.unit_history = {}
-        self.unit_history = 0
+        self.suite_history = {}
+        self.suite_counter = 0
+
+        Suite.all_suites.append(self)
 
     def __repr__(self):
         return f'{__class__.__name__}({self.suite_number})'
 
-    def moving_in(self,resident_name):
-        new_res = resident_name
-        self.unit_history[new_res] = self.unit_history
-        self.unit_history += 1
-        pass
+    def moving_in(self,resident_name,email):
+        '''
+        Upon moving in of a Resident, this should add resident's details as history to maintain record of current and past residents.
+        It will also change unit's vacancy to False
+        '''
+        #check if unit is vacant
+        assert self.is_vacant == True, f'Suite {self.suite_number} is not vacant!'
 
+        self.is_vacant = False
+        # self.res = Resident(resident_name, email)
+        self.res = resident_name
+
+
+        self.suite_history[self.suite_number, self.res] = self.suite_counter
+        self.suite_counter += 1
+
+        print(self.suite_history)
+        # print(Unit.all_units)
+
+    def moving_out(self, resident_name):
+        '''
+        Upon moving out, vacancy should be set to free for unit & this should also reflect in the suite_history
+        '''
+
+
+unnit=Suite(100)
+unnit.moving_in('xyz','a@s.ad')
+unnit1=Suite(101)
+unnit1.moving_in('xy11z','a@s.ad')
 
 class Building:
     '''
@@ -33,9 +71,9 @@ class Building:
         assert number_of_suites <= Building.max_capacity_suites, f'Capacity is {Building.max_capacity_suites} but {number_of_suites} was provided.'
 
         for number in range(1,number_of_suites+1):
-            self.units[Unit(number)] = self.units_counter
+            self.units[Suite(number)] = self.units_counter
             self.units_counter += 1
 
         print(self.units)
         
-Building().add_suites(10)
+# Building().add_suites(10)
