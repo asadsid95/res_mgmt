@@ -12,10 +12,10 @@ class Building:
 
     def add_unit(self,number):
 
-        current_occupied_units =list(self.units.keys())
+        current_occupied_units = list(self.units.keys())
         
         assert number not in current_occupied_units, f'Unit {number} is already occupied'
-        assert len(current_occupied_units) < Building.max_capacity_resident, f"Building capacity is {Building.max_capacity_resident}, {self} being the {self.units_counter}th exceed this"
+        assert len(current_occupied_units) < Building.max_capacity_units, f"Building capacity is {Building.max_capacity_units}, {self} being the {self.units_counter}th exceed this"
 
         new = Unit(number)
         self.units[new.unit_number] = self.units_counter
@@ -27,21 +27,24 @@ class Building:
         
         del self.units[number]
 
-# buildingA = Building()
+buildingA = Building()
 
-# buildingA.add_unit(100)
-# buildingA.add_unit(200)
-# buildingA.add_unit(300)
-# print(buildingA.units)
+buildingA.add_unit(100)
+buildingA.add_unit(200)
+buildingA.add_unit(300)
+# buildingA.add_unit(400)
+# buildingA.add_unit(500)
+print(buildingA.units)
 
 # buildingA.remove_unit(100)
 # buildingA.remove_unit(200)
 # print(buildingA.units)
 
-test=(1,)
-max_cap = 700
-test1 = list(range(101, max_cap, 100))
+# test=(1,)
+# print(type(test))
 
-print(type(test))
-print(test1)
-    
+# units = {}
+# max_cap = 700
+
+# for cap in range(101,70):
+#     units[cap]

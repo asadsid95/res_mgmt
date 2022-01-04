@@ -24,9 +24,9 @@ class Unit:
         self.resident = None
         self.occupied = False
 
-unit1 = Unit(100)
-unit1.add_resident('Bob Vance', 'b.v@a.com', 0, 2)
-print(unit1)
-unit1.remove_resident('Bob Vance')
+# unit1 = Unit(100)
+# unit1.add_resident('Bob Vance', 'b.v@a.com', 0, 2)
+# print(unit1)
+# unit1.remove_resident('Bob Vance')
 
 # unit1.add_resident('some joe', 'b.v@a.com', 0, 3)
