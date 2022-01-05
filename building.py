@@ -19,9 +19,26 @@ class Suite:
         self.is_vacant = is_vacant
         self.suite_history = {}
         self.suite_counter = 0
-
         Suite.all_suites.append(self)
- 
+
+        with UseDatabase() as self.cursor:
+            create_suites_table = '''CREATE TABLE IF NOT EXISTS suites(
+                suite_id INTEGER PRIMARY KEY,
+                building_id INTEGER,
+                suite_number INTEGER,
+                is_vacant INTEGER,
+                FOREIGN KEY(building_id) REFERENCES buildings(building_id)
+                ) '''
+
+            insert_suites_table = f'''INSERT INTO suites(
+                suite_number, is_vacant) VALUES (
+                    {self.suite_number}, {self.is_vacant}
+                )'''
+
+            self.cursor.execute(create_suites_table)
+            self.cursor.execute(insert_suites_table)
+
+
     def __repr__(self):
         return f'{__class__.__name__}({self.suite_number})'
 
@@ -60,7 +77,7 @@ class Suite:
         pass
 
 
-# unnit=Suite(100)
+# Suite(100)
 # unnit.moving_in('xyz','a@s.ad')
 # unnit.moving_out('xyzz')
 # # unnit1=Suite(101)

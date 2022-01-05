@@ -48,7 +48,7 @@ This system, operated by building's concierge (staff), will allow assigning resi
 - - unit_id INT (PK)
 - - building_id (FK)
 - - unit_number INT
-- - Occupied BOOLEAN
+- - Vacant BOOLEAN
 
 - Table: Residents
 - - resident_id INT (PK)
