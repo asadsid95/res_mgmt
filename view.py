@@ -1,9 +1,9 @@
-from pywebio.input import TEXT, input
-from pywebio.output import put_text
-from pywebio.platform.tornado import start_server
+# from flask import Flask
 
-def main():
-    activity = input('Activity to do', type=TEXT)
-    put_text("Today, we'll be doing ", activity)
+# app = Flask(__name__)
 
-start_server(main, port=8080, debug=True)
+# @app.route('/')
+# def hello():
+#     return 'Hello world from Flask!'
+
+# app.run()
