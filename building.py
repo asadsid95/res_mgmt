@@ -35,8 +35,13 @@ class Suite:
                     {self.suite_number}, {self.is_vacant}
                 )'''
 
+            selectt = f'''SELECT * FROM suites LIMIT 5'''
+
             self.cursor.execute(create_suites_table)
             self.cursor.execute(insert_suites_table)
+            self.cursor.execute(selectt)
+
+            print(self.cursor.fetchall())
 
 
     def __repr__(self):

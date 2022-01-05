@@ -44,11 +44,11 @@ This system, operated by building's concierge (staff), will allow assigning resi
 - - building_id INT (PK)
 - - number_of_units INT
 
-- Table: Units
-- - unit_id INT (PK)
+- Table: Suites
+- - suite_id INT (PK)
 - - building_id (FK)
-- - unit_number INT
-- - Vacant BOOLEAN
+- - suite_number INT
+- - is_vacant BOOLEAN
 
 - Table: Residents
 - - resident_id INT (PK)
@@ -57,7 +57,7 @@ This system, operated by building's concierge (staff), will allow assigning resi
 - - email TEXT
 - - lease_start_date DATETIME/TEXT
 - - lease_END_date DATETIME/TEXT
-- - active BOOLEAN
+- - is_active BOOLEAN
 
 - Table: Parcels
 - - parcel_id INT (PK)
