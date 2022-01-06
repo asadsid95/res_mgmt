@@ -29,15 +29,21 @@ class Building:
         assert number_of_suites <= Building.max_capacity_suites, f'Capacity is {Building.max_capacity_suites} but {number_of_suites} was provided.'
 
         with UseDatabase() as self.cursor:
-            create_suites_table = '''CREATE TABLE IF NOT EXISTS suites(
-            suite_id INTEGER PRIMARY KEY,
-            building_id INTEGER,
-            suite_number INTEGER,
-            is_vacant INTEGER,
-            FOREIGN KEY(building_id) REFERENCES buildings(building_id)
-            ) '''
+            insert_number_of_suites = f'''INSERT INTO buildings 
+            (total_suites) VALUES ({number_of_suites}) 
+            '''
+            self.cursor.execute(insert_number_of_suites)
+            
+        # with UseDatabase() as self.cursor:
+        #     create_suites_table = '''CREATE TABLE IF NOT EXISTS suites(
+        #     suite_id INTEGER PRIMARY KEY,
+        #     building_id INTEGER,
+        #     suite_number INTEGER,
+        #     is_vacant INTEGER,
+        #     FOREIGN KEY(building_id) REFERENCES buildings(building_id)
+        #     ) '''
 
-            self.cursor.execute(create_suites_table)
+        #     self.cursor.execute(create_suites_table)
 
         # print(self.cursor.fetchall())
 
@@ -45,16 +51,11 @@ class Building:
             self.units[Suite(number)] = self.units_counter
             self.units_counter += 1
             
-            insert_suites_table = f'''INSERT INTO suites(
-            suite_number, is_vacant) VALUES (
-                {number}, {self.is_vacant})'''
-            self.cursor.execute(insert_suites_table)
+            # insert_suites_table = f'''INSERT INTO suites(
+            # suite_number, is_vacant) VALUES (
+            #     {number}, {self.is_vacant})'''
+            # self.cursor.execute(insert_suites_table)
 
-        with UseDatabase() as self.cursor:
-            insert_number_of_suites = f'''INSERT INTO buildings 
-            (total_suites) VALUES ({number_of_suites}) 
-            '''
-            self.cursor.execute(insert_number_of_suites)
 
         print(self.units)
 

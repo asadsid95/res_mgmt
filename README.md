@@ -5,6 +5,7 @@
 This program is a building management system. The following are **client's requirements**:
 This system, operated by building's concierge (staff), will allow assigning residents to units, adding/removing parcel upon receiving/picking up.
 
+**Product requirements:**
 1. This system must keep record of all residents that have ever lived in a specific unit. This means keeping history of all residents.
 2. This system must keep record of all parcels received by the resident. This means keeping history of all parcels.
 3. This system must be able to send reminders via email to residents who haven't picked up their parcels after 48 hours.
